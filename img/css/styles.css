@@ -1,0 +1,188 @@
+/*
+основной цвет текста #757575
+вторичный цвет текста #21212
+цвет текста email и номера телефона(футер) rgba(255, 255, 255, 0.6)
+белый цвет текста #ffffff
+цвет акцента теста/фона #2196f3
+цвет фона хедера #FFFFFF
+цвет фона мэйна основной #E5E5E5
+цвет фона мейна вторичный #F5F4FA
+цвет фона футера #2F303A
+цвет фона кнопки #2196F3
+цвет текста кнопки #FFFFFF
+*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --accent-text-color: #2196f3;
+  --white-text-color: #ffffff;
+  --bg-color-header: #ffffff;
+  --bg-primary-color-main: #e5e5e5;
+  --bg-secondary-color-main: #f5f4fa;
+  --bg-color-futer: #2f303a;
+  --bg-color-button: #2196f3;
+  --text-color-button: #ffffff;
+}
+body {
+  /*временно, чтобы видеть белый текст*/
+  background-color: greenyellow;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+/*Хедер*/
+/*Лого*/
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+/*Лого акцент*/
+.logo .logo-accent {
+  color: var(--accent-text-color);
+}
+/*Класс сброса свойст*/
+.list {
+  list-style: none;
+}
+/*Навигация сайта*/
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .current {
+  color: var(--accent-text-color);
+}
+/*Обратная связь (телефон, емейл)*/
+.connect .connect-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.connect .connect-link:hover,
+.connect .connect-link:focus {
+  color: var(--accent-text-color);
+}
+
+/*Мейн*/
+/*Герой*/
+.hero .hero-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/*Наши принципы*/
+.principles .principles-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+}
+/*Заголовок секций мейна*/
+.section .section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/*Чем мы занимаемся*/
+.task .task-title {
+  color: var(--white-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+/*Сотрудники*/
+.employees .employees-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 1.14;
+  line-height: 19px;
+}
+
+/*Кнопка*/
+.button {
+  color: var(--text-color-button);
+  background-color: var(--bg-color-button);
+  border-color: transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+/*Футер*/
+.adress {
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+.email {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+.telefone {
+  color: var(--footer-text-color);
+  text-decoration: none;
+}
+.footer-invitation {
+  color: var(--white-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+}
+.copyright {
+  color: var(--footer-text-color);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+/*Портфолио*/
+
+.catalog .catalog-scroll:hover,
+.catalog .catalog-scroll:focus {
+  color: var(--text-color-button);
+}
+
+.examples .examples-title {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.examples .examples-subscribe {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}
+
+.examples .examples-text {
+  color: var(--white-text-color);
+  font-size: 18px;
+  line-height: 1.56;
+  text-decoration: none;
+}
